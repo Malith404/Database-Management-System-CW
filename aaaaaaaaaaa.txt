@@ -1,0 +1,12 @@
+SELECT w1762649_Company.w1762649_compCode,w1762649_Company.w1762649_compName,count(w1762649_Staff.w1762649_staffFullName) AS "Number of Staff"
+FROM w1762649_Staff LEFT JOIN w1762649_Company ON w1762649_Staff.w1762649_compCode = w1762649_Company.w1762649_compCode
+GROUP BY w1762649_Company.w1762649_compCode
+
+
+
+SELECT Company.W1761885_compName,Staff.W1761885_staffFullName,Staff.W1761885_staffPosition,Offer.W1761885_offerName,Offer.W1761885_offerDescrip 
+FROM W1761885_Company Company 
+JOIN W1761885_Staff Staff 
+ON Company.W1761885_compCode = Staff.W1761885_compCode 
+JOIN W1761885_Offer Offer 
+ON Offer.W1761885_compCode= Company.W1761885_compCode

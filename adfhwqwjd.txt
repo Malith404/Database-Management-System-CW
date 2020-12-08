@@ -1,0 +1,11 @@
+SELECT c.w1762649_compName,s.w1762649_staffFullName,s.w1762649_staffPosition,o.w1762649_offerName,o.w1762649_offerDescrip
+FROM w1762649_Company c join w1762649_Staff s JOIN w1762649_Offer o
+on c.w1762649_compName=s.w=o.w
+group by c.w1762649_compCode
+
+
+
+SELECT c.w1762649_compName, s.w1762649_staffFullName, s.w1762649_staffPosition, o.w1762649_offerName, o.w1762649_offerDescrip
+FROM w1762649_company c JOIN w17626449_staff s JOIN w1762649_offer o
+ON c.w1762649_compCode = s.w17626490_compCode
+AND c.w1762649_compCode = o.w1762649_compCode

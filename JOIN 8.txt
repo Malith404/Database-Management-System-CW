@@ -1,0 +1,16 @@
+SELECT c.w1762649_compCode,c.w1762649_compName,count(s.w1762649_staffFullName)AS "Number of Staff"
+FROM w1762649_Company c join w1762649_Staff s
+on c.w1762649_compCode=s.w1762649_compCode
+group by c.w1762649_compCode
+
+
+
+
+
+
+
+
+
+SELECT c.w1762649_compCode,c.w1762649_compName,count(s.w1762649_staffFullName)AS "Number of Staff"
+FROM w1762649_Company c join w1762649_Staff s
+group by c.w1762649_compCode
